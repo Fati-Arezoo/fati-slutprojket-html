@@ -1,0 +1,858 @@
+/*===============================================Navigation======================================= */
+.navigation{
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color:var(--white);
+}
+
+.main-container{
+    position: relative;
+    top: 100px;
+    height: auto;
+    margin: 0 40px;
+}
+
+/* =================================================Navbar ============================================= */
+.top-contet{
+    position: relative;
+    width: 100%;
+    height: 100%; 
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.nav-logo{
+    flex-basis: 35%;
+    padding:.7rem 0 0 3rem;
+}
+
+.top-nav{
+    height: 100%;
+    flex-basis: 65%;
+}
+
+.top-menu{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-menu li{
+    padding: 1.5rem;
+    white-space: nowrap;
+}
+
+.line::before{  
+ content: "";
+border-left: 1px solid rgba(82,92,101,.4);
+width: 0;
+height: 12px;
+}
+
+.top-menu .fas{
+    padding-left: 5px;
+    font-size :1rem;
+    color: var(--lightgrey);
+}
+
+/* ========================================Hamburgaremeyn icon========================================== */
+
+.open-slide .fa-bars{
+    font-size: 23px;
+    color:#02b3e4;
+}
+
+/* ====================================Container with pic and table ======================================= */
+
+.middle-container{
+    height: 21rem;
+    display: flex;
+}
+
+.showcase-menu{
+    display: flex;
+}
+
+.showcase-menu img{
+    height:44px; 
+    width: auto;
+}
+
+.showecase{
+    height: 100%;
+    flex-basis: 60%;
+    background-image: url(/img/HomepageBanner_tablet.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 2rem;  
+}
+
+.showecase-title , .showecase-text{
+    color: var(--white);
+    padding-top: 1.5rem;
+    font-family: sans-serif;
+}
+
+ .showecase-title{
+     font-size: 1.5rem;
+     font-weight: 500;
+ }
+ 
+ .showecase a, .grey-box-button{
+     display: inline-block;
+     padding: .9rem 3rem;
+     margin-top: 1rem;
+      letter-spacing: .125rem; 
+     font-weight: 600; 
+     background: var(--green);
+     color: var(--white);
+     text-transform: uppercase;
+     border-radius: 4px;
+     box-shadow: 0 0 8px 0 rgba(17,22,26,.16), 0 4px 8px 0 rgba(17,22,26,.08), 0 8px 16px 0 rgba(17,22,26,.08);
+ }
+
+ .showcase-menu li{
+     padding-right: 1.9rem;
+ }
+
+/* ================================================== Table================================================= */
+
+.tabel{
+    height: 100%;
+    flex-basis: 40%;
+} 
+
+.tabel-title{
+    text-align: center;
+    color: #2e3d49;
+    padding-bottom: 1rem;
+}
+
+.content-table{
+    width: 100%;
+    border-collapse: separate;
+}
+
+.content-table th{
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: none;
+}
+
+.col {
+     height: 40px;
+ }
+
+ .col-green , .col-grey{
+    text-align: center;
+    color: var(--white);
+     }
+
+.content-table .col-green{
+    background-color: var(--green);
+}
+
+.content-table .col-grey{
+    background-color: var(--table-bg);
+}
+
+.content-table .col-light-blue{
+    width: auto;
+    text-transform: none;
+    color: #525c65;
+    background-color:#f5fcfe;
+    padding: 1px 1px 1px 20px;
+    text-align: left;
+    font-size: 14px;
+}
+
+/* ==========================================text-top-picture=============================================== */
+.text-program-title{
+    text-align: center;
+    padding: 5rem 0 1.8rem 0;
+}
+
+/* =============================== The line text over The news boxs======================================= */
+
+.focus{ height: 4rem; }
+
+.focus-menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.focus-link{
+    text-transform: uppercase; 
+    white-space: nowrap;
+}
+
+.focus-link:hover{
+     color: #1f2932;
+    font-weight: 600;
+    border-bottom: 2px solid #02b3e4;;
+}
+
+/* ========================================== four news boxs========================================== */
+
+.news-card{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding-left: 1.5rem;
+    padding-bottom: 5rem;
+}
+
+.card{
+    width: 93%;
+    height: auto;
+    box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
+    border-radius: .375rem;
+    transition: all .3s ease;
+    border-radius: .25rem;
+    background-color:var(--white);
+}
+
+.card-header{
+    height: 136px;
+    position: relative;
+    border-radius: .25rem .25rem 0 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header-one {
+    background-image: url(//www.udacity.com/www-proxy/contentful/assets/2y9b3o528xhq/7ufWxtIFBsBSpMVJ3nA9rK/f807a01af1233cafcebd0539e221d4b0/man-analyzing-data-card.jpg); 
+}
+
+.header-two{
+    background-image: url(https://www.udacity.com/www-proxy/contentful/assets/2y9b3o528xhq/7c906TlrrN7t8YHKd1VZTh/ac9756cf1f4cbe7eff1c73906af938e5/catalog_image_nd030.jpg);
+}
+
+.header-three{
+    background-image: url(https://www.udacity.com/www-proxy/contentful/assets/2y9b3o528xhq/4Vsc69B7HtGJleUbsGoEQF/df82194a8785db58a5fc6e344ef71ad0/catalog_image_nd072.jpg);
+}
+
+.header-four{
+    background-image: url(https://www.udacity.com/www-proxy/contentful/assets/2y9b3o528xhq/4x4nYFuwsS0CVlfp5YQjZQ/13a0153215af9d8be77a0746bf675b25/data_analyst_catalog_image.jpg);
+}
+
+.card-header::before{
+    content: 'news';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ad3959;
+    color:#f5fcfe;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1.5rem;
+    padding: 0 .5rem;
+    border-radius: .25rem;
+    font-size: .8125rem;
+    letter-spacing: 1.5px;
+    z-index: 1;
+}
+.card-header::after{
+     content: "";
+     position: absolute;
+     bottom: 0;
+     right: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    background-color: rgba(0,0,0,.5);
+    border-radius: .25rem .25rem 0 0;
+}
+
+.card-body{
+    height: 100%;
+    padding: 10px 0 30px 20px;
+}
+
+.card-footer{
+    color: #525c65;
+    font-size: 13px;
+    line-height: 20px;
+    padding: 0 0 20px 20px;
+}
+
+/* =====================================Text under the news boxs======================================== */
+.line-under-newspic{
+  text-align: center;
+    padding-bottom: 1rem;
+}
+
+.rubrik-under-newspic{
+    display: block;
+    padding-bottom: .5rem;
+    color: #2e3d49;
+    font-weight: normal;
+}
+
+.text-under-newpic{
+    padding-bottom: 1rem;
+    color: #525c65;
+}
+
+/* ===================================Four boxs with top color======================================== */
+.box-conatiner img{
+    width: 34px;
+    height: 34px;
+}
+
+.box-conatiner{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 1rem;
+    padding-bottom: 5rem;
+    }
+    
+    .box-conatiner > div ,.student-box{
+     width: auto;   
+     height: 18.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: all 0.5s ease-out; 
+    padding-top: 2.3rem;
+    border-radius: .40rem;
+    background-color: #fff;
+    box-shadow: 0 0 4px 0 rgba(17,22,26,.16), 0 2px 4px 0 rgba(17,22,26,.08), 0 4px 8px 0 rgba(17,22,26,.08);
+    }
+
+.box-one, .student-box-three{
+    border-top: 3px solid #02b3e4;
+}
+
+.box-two{
+    border-top: 3px solid #ffae0c;
+}
+
+.box-three, .student-box-one{
+    border-top: 3px solid #15c26b;
+}
+
+.box-four, .student-box-two{
+    border-top: 3px solid #a951ed;
+}
+
+.box-title{
+ padding: 1rem 0 1rem 0;
+ font-size: medium;
+ }
+
+ .box-text{
+    font-size: small;
+    padding: 0 1.25rem 1.25rem;
+    line-height: 28px; 
+ }
+
+
+/* =======================================The dark grey box ============================================ */
+
+.grey-box{
+    height: 18rem;
+     margin-bottom: 2rem; 
+    background-color: #2e3d49;
+}
+
+.grey-box-text{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding-top: 5rem;  
+}
+
+.grey-box-rubrik{
+    font-weight: normal;
+    font-size: 1.8rem;
+    color: var(--white);
+    padding-bottom: 1rem;
+}
+
+.grey-box-text p{
+    color: var(--white);
+    padding-bottom: 2rem; 
+}
+
+.grey-box-button{
+    cursor: pointer;
+    border: none;
+    color: var(--white);
+}
+
+/* =======================================Text under the dark grey box======================================= */
+.second-container{
+    height: auto;
+  position: relative;
+  top: 100px;
+  background-color: #f5fcfe;
+}
+
+/* =======================================Text under news boxs============================================ */
+.rubrik-container{
+    padding-top: 4rem;
+    text-align: center;
+}
+.rubrik-container h2{
+    font-weight: normal;
+}
+
+/* ====================================Three information's boxs============================================= */
+.info-box-card{
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+    padding-bottom: 4rem;   
+}
+
+.info-box{
+    height: 300px;
+    margin: 1rem;
+    width: 21.5rem;
+    text-align: center;
+    padding: 0 2rem 0 2rem;
+}
+
+
+.box-body-title{
+    padding: 1rem 0;
+    font-weight: normal;
+}
+
+.box-footer{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+/* ====================================== The studen's profile boxs======================================== */
+.three-box{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 2.8rem 0 ;
+}
+
+.student-box{
+position: relative; 
+justify-content: space-between;
+    height: 23.5rem;
+     margin: 1rem; 
+    width: 21.5rem;
+    font-size: 1rem;
+    padding: 0 1.25rem 1.25rem;  
+}
+
+.student-box::before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -1.4rem;
+    background-position: center;
+    background-size: cover;
+}
+
+.student-card-footer{
+    z-index: 2;
+   }
+
+   .text-border{
+       font-size: small;
+       padding-bottom: .5rem;
+   }
+
+.student-box::after{
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    border-radius: 0 0 8px 8px;
+    bottom: 0;
+    background-color: #f7f7f8;
+}
+
+.student-box-one::before{
+    background-image: url(//www.udacity.com/www-proxy/contentful/assets/2y9b3o528xhq/2hJTmqhPe2T5zPCSVC3waq/533fc738cb83f2baf5aa75ca3ae77161/Jesse.png);
+}
+
+.student-box-two::before{
+    background-image: url(//www.udacity.com/www-proxy/contentful/assets/2y9b3o528xhq/4nmjsKImQCCTpeoHhMMz1W/548748ac6a642329aadde86996d23fcf/Sundar.png);
+}
+
+.student-box-three::before{
+    background-image: url(//www.udacity.com/www-proxy/contentful/assets/2y9b3o528xhq/3GBOJxWBUVtGuEDc1Oxsxj/8742cdc8459747649df0184f2674673b/David.png); 
+}
+
+.student-card-title{
+    padding-top: 3rem;
+    font-weight: normal;
+}
+
+.student-card-body{
+    font-style: italic;
+    padding-bottom: 3rem;
+}
+
+
+/* =============================button under the studen's profile boxs====================================== */
+.last-button{
+   margin-top: -3rem;
+   padding-bottom: 5rem;
+    text-align: center;
+}
+
+/* ========================================footer and footer links=========================================== */
+.top-footer{
+    height: auto;
+    padding-top: 3rem;
+    background-image: linear-gradient(to bottom right,#f7f7f7,#eafbff);
+}
+
+.all-footer-links{
+    padding-bottom: 3rem;
+}
+
+
+.footer-logo{
+    padding-left: 3rem;
+}
+
+.footer-links{
+    display: flex;
+   justify-content: space-around;
+   padding-left: 1.4rem;
+}
+
+.footer-links li , .footer-left-link, .left-botten-footer-link a{
+    list-style: none;
+     font-size: 13px; 
+      line-height: 24px; 
+      color: #6a6f74;
+}
+
+.footer-links a{
+     display: block;
+     color: #6a6f74;
+} 
+
+.footer-links a:hover{
+    color: #000000;
+}
+
+.footer-links p{
+    padding: 2rem 0 .7rem 0;
+    font-size: .8125rem;
+    line-height: 1.5rem;
+    letter-spacing: .125rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #7d97ad; 
+}
+
+.footer-line{
+    width: 93%;
+    margin: 0 auto;
+}
+
+
+/* =================================Botten footer and social icon=========================================== */
+.botten-footer-top{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2.8rem;
+}
+
+.left-botten-footer ul , .social{
+    display: flex;
+}
+
+.right-botten-footer a{
+    padding-left: .9rem;
+}
+
+
+/* ======================================two text in the foote botten======================================== */
+.last-section{
+    text-align: center;
+}
+
+.last-text{
+    font-size: x-small;
+}
+
+
+
+/* ==========================================media queri for full size========================================= */
+@media only screen and (min-width: 1200px){
+    .open-slide{display: none;}
+} 
+
+
+/* ==========================================media queri for ipad========================================= */
+@media only screen 
+and (max-width : 980px){
+
+    .main-container{
+        margin: 0 auto;
+    }
+
+.navigation{
+    height: 70px;
+}
+
+.open-slide{
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+.nav-logo{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.top-nav, .first-logo{
+    display: none;
+}
+
+/* ======================================Container with picture and table================================= */
+.middle-container{
+    height: 45rem;
+     display: flex;
+     flex-direction: column;
+    }
+
+    .tabel{
+        padding: 2rem 0 3rem 0
+    }
+    .tabel-title{
+       font-size: 1.5rem;
+    }
+    .showecase-title{
+        font-weight: 700;
+    }
+
+/* ======================================focus-menu-line ovanför news-card================================= */
+.focus-link{
+    font-size: 13px;
+}
+
+/* ==================================================New card============================================= */
+.news-card{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 1.2rem;
+}
+
+/* ===========================================four box with top color======================================= */
+.box-conatiner{
+    display: grid;
+    grid-template-columns: repeat(2,1fr); 
+    gap: 1rem; 
+} 
+
+/* ================================================botten-footer======================================= */
+.last-link{
+    display: none;
+} 
+
+/* ================================================Media ipad end======================================= */
+}
+
+/* =============================================Media for mobil==============================================*/
+
+@media only screen and (max-width: 700px){
+
+
+    .main-container{  margin: 0 auto;}
+
+/* ====================================================Navighation======================================= */
+.navigation{ height: 70px;}
+
+/* ====================================================Hamburgaremenyn======================================= */
+.open-slide{ padding-left: 1.5rem;}
+
+/* ====================================================Navbarlogo======================================= */
+.nav-logo{ padding-left: 6rem;}
+
+/* ==================================container with picture and table ===================================== */
+.middle-container{
+height: 45rem;
+ display: flex;
+ flex-direction: column;
+}
+
+.showecase{
+    flex-basis: 65%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+.tabel{
+    flex-basis: 35%;
+    padding-top: 2rem;
+}
+
+.showecase-title{
+    font-weight: 700;
+}
+
+.showcase-menu, .text-two, .top-nav, .first-logo{
+    display: none;
+}
+
+/* ========================================text under showcase and table==================================== */
+.text-program-title{
+width: 100%;
+padding-bottom: 1rem;
+}
+
+.text-program-title h1{
+    font-size: 1.1rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    font-style: normal;
+}
+
+/* ============================================Line over the news box======================================= */
+
+.focus{ height: 15rem; margin-bottom: 1rem;}
+
+.focus-menu{ height: 100%; display: flex; flex-direction: column; }
+
+.focus-menu li{
+    position: relative;
+    height: 100%;
+    padding: 10px 0 0 10px;
+    padding-left: 10px;
+    border-bottom: .0625rem solid #c8cdd2;
+}
+
+.focus-link{
+    padding-bottom: 1rem;
+    letter-spacing: .0475rem;
+    line-height: 1.1875rem;
+    font-weight: bolder;
+    font-size: small;
+}
+
+.focus-menu li::after{
+    content: "+";
+    color: #02b3e4;
+    display: block;
+    position: absolute;
+    font-size: 1.2rem;
+    top: .40rem;
+    right: 24px; 
+    font-weight: 600;
+}
+  
+/* ==================================================text under news box===================================== */
+.rubrik-under-newspic{  font-size: 1.5rem;}
+
+/* ===============================================Four boxs with top color=================================== */
+.box-conatiner{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 1.8rem;
+    width: 18.7rem;
+    margin: 0 auto;
+}
+
+.grey-box-text{
+ padding:2rem;
+}
+
+/* =============================================thre information boxs============´=========================== */
+
+.info-box-card, .three-box{
+    height: 38rem;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info-box{
+    padding-top: 2.5rem;
+}
+
+
+/* ==============================Three student's box with profile pic====================================== */
+.three-box{
+    height: 76rem;
+    align-content: space-between;
+}
+
+/* ====================================================Top footer========================================= */
+.top-footer{
+    height: 56rem;
+}
+
+.footer-links .text a{
+    display: none;
+}
+
+.footer-logo{
+    padding-left: 1.3rem;
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: 2rem 1rem;
+    padding: .5rem;
+    background-color: var(--white);
+    box-shadow: 0 0 4px 0 rgba(17,22,26,.16), 0 2px 4px 0 rgba(17,22,26,.08), 0 4px 8px 0 rgba(17,22,26,.08);
+}
+
+.footer-links .mb-half{
+    position: relative;
+}
+
+.footer-links .mb-half::after{
+    content: "+";
+    color: #94989c;
+    display: block;
+    position: absolute;
+    font-size: 1.2rem;
+    top: 30px;
+    right: 24px; 
+    font-weight: 600;
+}
+  
+/* ====================================================Botten footer======================================= */
+.botten-footer-top{
+    flex-direction: column;
+    align-items: center;
+}
+
+.social {
+    padding:.5rem;
+}
+
+/* ================================================Media end for mobil====================================== */
+}
+
+
+
+
+
+
+
+
+
